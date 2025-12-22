@@ -17,11 +17,11 @@ This repository contains the source code and datasets required to reproduce the 
 
 * **Automation Script**:
 * `RQ.bat`: An automated experiment script that covers **RQ1**, **RQ2**, **RQ4**, and **RQ5**.
+* **Note for RQ3**: To reproduce the ablation study (**RQ3**), users need to manually modify the `forward` method in `model.py` to concat specific feature vectors (e.g., only `encoder_out1` and `encoder_out2` for the CE+GE variant).
 
 
 * **Deep Learning Model (GMove)**:
-    * `model.py`: Defines the `GMove` architecture, including Bi-LSTM (semantic), CNN_GE (structural), and CNN_METER (metric) branches.
-      > **Note for RQ3**: To reproduce the ablation study (**RQ3**), users need to manually modify the `forward` method in `model.py` to concat specific feature vectors (e.g., only `encoder_out1` and `encoder_out2` for the CE+GE variant).
+    * `model.py`: Defines the `GMove` architecture, including Bi-LSTM (semantic), CNN_GE (structural), and CNN_METER (metric) branches. 
     * `train.py`: Contains the training loop and validation logic.
     * `data.py`: Handles data loading and preprocessing.
     * `main.py`: The entry point for training the GMove model on the synthetic dataset (corresponding to **RQ2**).
