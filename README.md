@@ -16,7 +16,7 @@ This repository contains the source code and datasets required to reproduce the 
 ### Source Code
 
 * **Automation Script**:
-* `RQ.bat`: An automated experiment script that covers **RQ1**, **RQ2**, **RQ4**, and **RQ5**.
+* `src/models/RQ.bat`: An automated experiment script that covers **RQ1**, **RQ2**, **RQ4**, and **RQ5**.
 * **Note for RQ3**: To reproduce the ablation study (**RQ3**), users need to manually modify the `forward` method in `model.py` to concat specific feature vectors (e.g., only `encoder_out1` and `encoder_out2` for the CE+GE variant).
 
 
