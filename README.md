@@ -21,11 +21,11 @@ This repository contains the source code and datasets required to reproduce the 
 
 
 * **Deep Learning Model (GMove)**:
-* `model.py`: Defines the `GMove` architecture, including Bi-LSTM (semantic), CNN_GE (structural), and CNN_METER (metric) branches.
-* `train.py`: Contains the training loop and validation logic.
-* `data.py`: Handles data loading and preprocessing.
-* `main.py`: The entry point for training the GMove model on the synthetic dataset (corresponding to **RQ2**).
-* `test.py`: The evaluation script for real-world projects (corresponding to **RQ5**).
+  * `model.py`: Defines the `GMove` architecture, including Bi-LSTM (semantic), CNN_GE (structural), and CNN_METER (metric) branches.
+  * `train.py`: Contains the training loop and validation logic.
+  * `data.py`: Handles data loading and preprocessing.
+  * `main.py`: The entry point for training the GMove model on the synthetic dataset (corresponding to **RQ2**).
+  * `test.py`: The evaluation script for real-world projects (corresponding to **RQ5**).
 * **Baseline Models (Machine Learning)**:
 * `LogisticRegression.py`, `DecisionTree.py`, `RandomForest.py`, `ExtraTrees.py`, `SVC.py`, `NB.py` (Naive Bayes), `xgb.py` (XGBoost): Scripts to train and evaluate baseline models used in **RQ1** and **RQ4**.
 
